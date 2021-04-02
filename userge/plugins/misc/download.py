@@ -24,10 +24,10 @@ from userge.utils.exceptions import ProcessCanceled
 LOGGER = userge.getLogger(__name__)
 
 
-@userge.on_cmd("download", about={
+@userge.on_cmd("dl", about={
     'header': "Download files to server",
-    'usage': "{tr}download [url | reply to telegram media]",
-    'examples': "{tr}download https://speed.hetzner.de/100MB.bin | testing upload.bin"},
+    'usage': "{tr}dl [url | reply to telegram media]",
+    'examples': "{tr}dl https://speed.hetzner.de/100MB.bin | testing upload.bin"},
     check_downpath=True)
 async def down_load_media(message: Message):
     """ download from tg and url """
