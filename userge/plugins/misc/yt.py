@@ -61,8 +61,8 @@ __{uploader}__
                                           '-t': 'upload to telegram'},
                               'examples': ['{tr}yt link',
                                            '{tr}yt -a12 -v120 link',
-                                           '{tr}ytdl -m -t link will upload the mp3',
-                                           '{tr}ytdl -m -t -d link will upload '
+                                           '{tr}yt -m -t link will upload the mp3',
+                                           '{tr}yt -m -t -d link will upload '
                                            'the mp3 as a document']}, del_pre=True)
 async def ytDown(message: Message):
     """ download from a link """
