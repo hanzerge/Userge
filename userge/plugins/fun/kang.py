@@ -22,15 +22,15 @@ from userge import userge, Message, Config
 
 
 @userge.on_cmd(
-    "kang", about={
+    "curry", about={
         'header': "kangs stickers or creates new ones",
         'flags': {
             '-s': "without link",
             '-d': "without trace"},
-        'usage': "Reply {tr}kang [emoji('s)] [pack number] to a sticker or "
-                 "an image to kang it to your userbot pack.",
-        'examples': ["{tr}kang", "{tr}kang -s", "{tr}kang -d",
-                     "{tr}kang 🤔", "{tr}kang 2", "{tr}kang 🤔 2"]},
+        'usage': "Reply {tr}curry [emoji('s)] [pack number] to a sticker or "
+                 "an image to curry it to your userbot pack.",
+        'examples': ["{tr}curry", "{tr}curry -s", "{tr}curry -d",
+                     "{tr}curry 🤔", "{tr}curry 2", "{tr}curry 🤔 2"]},
     allow_channels=False, allow_via_bot=False)
 async def kang_(message: Message):
     """ kang a sticker """
