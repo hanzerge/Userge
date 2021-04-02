@@ -54,13 +54,13 @@ __{uploader}__
         await message.edit(out)
 
 
-@userge.on_cmd("ytdl", about={'header': "Download from youtube",
+@userge.on_cmd("yt", about={'header': "Download from youtube",
                               'options': {'-a': 'select the audio u-id',
                                           '-v': 'select the video u-id',
                                           '-m': 'extract the mp3 in 320kbps',
                                           '-t': 'upload to telegram'},
-                              'examples': ['{tr}ytdl link',
-                                           '{tr}ytdl -a12 -v120 link',
+                              'examples': ['{tr}yt link',
+                                           '{tr}yt -a12 -v120 link',
                                            '{tr}ytdl -m -t link will upload the mp3',
                                            '{tr}ytdl -m -t -d link will upload '
                                            'the mp3 as a document']}, del_pre=True)
