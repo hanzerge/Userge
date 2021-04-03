@@ -30,7 +30,7 @@ from userge import userge, Message, Config
         'usage': "Reply {tr}curry [emoji('s)] [pack number] to a sticker or "
                  "an image to curry it to your userbot pack.",
         'examples': ["{tr}curry", "{tr}curry -s", "{tr}curry -d",
-                     "{tr}curry 🤔", "{tr}curry 2", "{tr}curry 🤔 2"]},
+                     "{tr}curry ➖", "{tr}curry 2", "{tr}curry ➖ 2"]},
     allow_channels=False, allow_via_bot=False)
 async def kang_(message: Message):
     """ kang a sticker """
@@ -79,7 +79,7 @@ async def kang_(message: Message):
                 getattr(emoji, a) for a in dir(emoji) if not a.startswith("_")):
             emoji_ = None
         if not emoji_:
-            emoji_ = "🤔"
+            emoji_ = "➖"
 
         u_name = user.username
         if u_name:
@@ -147,7 +147,7 @@ async def kang_(message: Message):
                         if '-d' in message.flags:
                             await message.delete()
                         else:
-                            out = "__kanged__" if '-s' in message.flags else \
+                            out = "__Tercurry__" if '-s' in message.flags else \
                                 f"[kanged](t.me/addstickers/{packname})"
                             await message.edit(f"**Sticker** {out} __in a Different Pack__**!**")
                         return
